@@ -56,9 +56,10 @@ A basic API for managing a quiz, allowing you to add new questions and fetch que
         "option1": "<Option 1>", 
         "option2": "<Option 2>",
         "option3": "<Option 3>", 
-        "option4": "<Option 4>"],
+        "option4": "<Option 4>",
         "correct_option": "<Correct option>"
       },
+      ...
       
     ]
     ```
