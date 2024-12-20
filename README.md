@@ -1,6 +1,6 @@
 # Quiz API
 
-A basic API for managing a quiz, allowing you to add new questions and fetch questions. You can use this API to make your own personal project like quiz application.
+A basic API for managing a quiz, allowing you to add new questions and fetch questions. You can use this API in your personal project like quiz application.
 
 ## Routes and Endpoints
 
@@ -59,7 +59,6 @@ A basic API for managing a quiz, allowing you to add new questions and fetch que
         "option4": "<Option 4>",
         "correct_option": "<Correct option>"
       },
-      ...
       
     ]
     ```
