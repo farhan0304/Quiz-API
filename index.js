@@ -17,6 +17,18 @@ const Port= process.env.PORT;
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
+app.get("/",(req,res)=>{
+    try {
+        res.status(200).json({
+            message: "Welcome to quiz api",
+            routes: "/quiz"
+        })
+    } catch (error) {
+        res.status(400).json({
+            error
+        })
+    }
+})
 app.use('/quiz',router);
 
 
