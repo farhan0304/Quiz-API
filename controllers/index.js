@@ -33,9 +33,11 @@ const getAllQuestion = async (req,res)=>{
         const questionData = await QuestionBank.find({},{
             _id:0,question:1,option1:1,option2:1,option3:1,option4:1,correct_option:1});
         
+        const shuffled = questionData.sort(() => 0.5 - Math.random());
+        const questionArray = shuffled.slice(0, 8);
         return res.status(200).json(
             [
-                ...questionData
+                ...questionArray
             ]
         );
         
